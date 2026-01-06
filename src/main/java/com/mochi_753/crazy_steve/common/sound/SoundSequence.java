@@ -67,7 +67,6 @@ public class SoundSequence {
         double z = getPosition().z();
 
         level.playSound(null, x, y, z, queue.soundEvent(), getSource(), getVolume() * queue.volume(), getPitch() * queue.pitch());
-        level.playSound(null, x, y, z, queue.soundEvent(), getSource(), getVolume() * queue.volume(), getPitch() * queue.pitch() * 2.0F);
     }
 
     private boolean isExpired() {

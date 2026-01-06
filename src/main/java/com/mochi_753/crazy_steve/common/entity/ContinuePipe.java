@@ -56,18 +56,18 @@ public class ContinuePipe {
     private static void prepareSounds(Vec3 position, ResourceKey<Level> dimension) {
         SoundSequence sequence = new SoundSequence(SoundSource.PLAYERS, position, dimension, 10.0F, 1.0F, SOUND_START_TICK);
 
-        sequence.addQueue(0, banjo(0.749F));
-        sequence.addQueue(6, banjo(0.749F));
-        sequence.addQueue(8, banjo(0.794F));
-        sequence.addQueue(10, banjo(0.890F));
-        sequence.addQueue(16, banjo(1.000F));
-        for (int i = 0; i < 18; i++) {
-            sequence.addQueue(22 + i, banjo(0.890F));
+        sequence.addQueue(0, harp(0.749F));
+        sequence.addQueue(6, harp(0.749F));
+        sequence.addQueue(8, harp(0.794F));
+        sequence.addQueue(10, harp(0.890F));
+        sequence.addQueue(16, harp(1.000F));
+        for (int j = 0; j < 18; j++) {
+            sequence.addQueue(22 + j, harp(0.890F));
         }
     }
 
-    private static SoundSequence.SoundQueue banjo(float pitch) {
-        return new SoundSequence.SoundQueue(SoundEvents.NOTE_BLOCK_BANJO.value(), 1.0F, pitch);
+    private static SoundSequence.SoundQueue harp(float pitch) {
+        return new SoundSequence.SoundQueue(SoundEvents.NOTE_BLOCK_HARP.value(), 1.0F, pitch);
     }
 
     public void tick(TickEvent.ServerTickEvent event) {

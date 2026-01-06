@@ -1,0 +1,8 @@
+{
+  "loader": "forge:obj",
+  "flip_v": true,
+  "model": "crazy_steve:models/custom/continue_pipe.obj",
+  "textures": {
+    "texture0": "crazy_steve:custom/continue_pipe"
+  }
+}
